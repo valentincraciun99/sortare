@@ -12,5 +12,6 @@
 // TODO: add headers that you want to pre-compile here
 #include "Vector.h"
 #include <ctime>
+#include <iostream>
 
 #endif //PCH_H
