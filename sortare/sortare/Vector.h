@@ -9,7 +9,7 @@ private:
 public:
 	Vector(int);
 	~Vector();
-	void Inserare(int);
+	void InserareLaFinal(int element);
 	void Eliminare(int);
 	void SortarePrinInserare();
 	void SortarePrinInterschimbare();

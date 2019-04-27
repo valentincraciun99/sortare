@@ -8,7 +8,8 @@ using namespace std;
 
 int main()
 {
-	Vector* v=new Vector(30005);
+	int a = 30500;
+	Vector* v=new Vector(a);
 
 	
 
@@ -16,7 +17,7 @@ int main()
 
 	for (int i = 0; i <= 30000; i++)
 	{
-		v->Inserare(rand());
+		v->InserareLaFinal(rand());
 	}
 	v->SortarePrinInserare();
 

@@ -1,5 +1,4 @@
 #include "pch.h"
-#include "Vector.h"
 using namespace std;
 
 
@@ -9,7 +8,7 @@ Vector::Vector(int numar_elemente)
 	index = 0;
 }
 
-void Vector::Inserare(int element)
+void Vector::InserareLaFinal(int element)
 {
 	v[index] = element;
 	index++;
