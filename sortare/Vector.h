@@ -14,6 +14,7 @@ public:
 	void SortarePrinInserare();
 	void SortarePrinInterschimbare();
 	double DurataUltimaSortare();
-	int Element(int);
+	int ElementLaIndicele(int);
+	
 };
 

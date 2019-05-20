@@ -1,17 +1,18 @@
 #include "pch.h"
 #include "Vector.h"
-
+#include <iostream>
 
 Vector::Vector(int numar_elemente)
 {
-	v = new int(numar_elemente);
+	v = new int[numar_elemente];
 	index = 0;
 }
 
 void Vector::Inserare(int element)
 {
-	v[index] = element;
-	index++;
+	
+	v[index++] = element;
+	std::cout << "a fost adaugat elementul " << v[index-1] << " pe pozitia " << index - 1<<"\n";
 }
 void Vector::Eliminare(int nr_elemente)
 {
@@ -24,9 +25,9 @@ void Vector::SortarePrinInserare()
 	std::clock_t start;
 	start = std::clock();
 	int aux;
-	for (int i = 1; i < index; i++)
+	for (int i = 0; i < index; i++)
 	{
-		for (int j = i + 1; j <= index; j++)
+		for (int j = i + 1; j < index; j++)
 		{
 			if (v[i] < v[j])
 			{
@@ -46,7 +47,7 @@ void Vector::SortarePrinInterschimbare()
 	do
 	{
 		swap = 0;
-		for (int i = 2; i <= index; i++)
+		for (int i = 1; i < index; i++)
 		{
 			if (v[i] < v[i - 1])
 			{
@@ -65,9 +66,11 @@ double Vector::DurataUltimaSortare()
 {
 	return duration;
 }
-int Vector::Element(int index_element)
+int Vector::ElementLaIndicele(int index_element)
 {
+
 	return v[index_element];
+		
 }
 
 
