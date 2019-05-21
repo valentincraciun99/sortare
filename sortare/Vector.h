@@ -1,18 +1,12 @@
 #pragma once
-class Vector
+#include "AlgoritmiSortare.h"
+class Vector:AlgoritmiSortare
 {
-private:
-	int *v;
-	int index;
-	double duration;
-
 public:
 	Vector(int);
 	~Vector();
 	void Inserare(int);
 	void Eliminare(int);
-	void SortarePrinInserare();
-	void SortarePrinInterschimbare();
 	double DurataUltimaSortare();
 	int ElementLaIndicele(int);
 	

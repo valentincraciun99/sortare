@@ -1,2 +1,7 @@
-﻿  sortare.cpp
+﻿  pch.cpp
+  AlgoritmiSortare.cpp
+  Vector.cpp
+  sortare.cpp
+c:\users\valentin\documents\github\sortare\sortare\sortare.cpp(10): warning C4101: 'k': unreferenced local variable
+  Generating Code...
   sortare.vcxproj -> C:\Users\Valentin\Documents\GitHub\sortare\x64\Debug\sortare.exe

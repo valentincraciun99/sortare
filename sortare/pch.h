@@ -12,5 +12,5 @@
 // TODO: add headers that you want to pre-compile here
 #include "Vector.h"
 #include <ctime>
-
+#include "AlgoritmiSortare.h"
 #endif //PCH_H

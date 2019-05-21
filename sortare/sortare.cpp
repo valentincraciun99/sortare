@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include <iostream>
+#include <windows.h>
 using namespace std;
 int main()
 {
@@ -10,22 +11,7 @@ int main()
 	Vector *vector = new Vector(100);
 
 	vector->Inserare(5);
-	vector->Inserare(2);
-	//cout<<vector->DurataUltimaSortare();
-	vector->Inserare(2);
-	vector->Inserare(2);
-	vector->Inserare(2);
-	
 
-
-
-	vector->SortarePrinInserare();
-	cout << vector->ElementLaIndicele(0);
-	vector->Eliminare(2);
-	
-	vector->~Vector();
-	
-
-	cin >> k;
+	system("pause");
 	return 0;
 }
