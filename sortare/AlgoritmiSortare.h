@@ -1,5 +1,5 @@
 #pragma once
-class AlgoritmiSortare
+ class AlgoritmiSortare
 {
 protected:
 	int *v;
@@ -12,5 +12,9 @@ public:
 	void SortarePrinInterschimbare();
 	void SortareRapida();
 	~AlgoritmiSortare();
+
+private:
+	int Divide(int,int);
+	void Qsort(int, int);
 };
 

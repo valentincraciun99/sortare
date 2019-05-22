@@ -3,14 +3,29 @@
 
 #include "pch.h"
 #include <iostream>
-#include <windows.h>
 using namespace std;
 int main()
 {
-	int k;
-	Vector *vector = new Vector(100);
+	Vector *vector = new Vector(100000);
 
-	vector->Inserare(5);
+	for (int i = 0; i <= 16999; i++)
+	{
+		vector->Inserare(rand());
+	}
+
+	//vector->SortarePrinInterschimbare();
+	vector->SortareRapida();
+	cout<<vector->DurataUltimaSortare();
+
+	
+	
+/*
+	for (int i = 0; i <= 98000; i++)
+	{
+
+		cout<<vector->ElementLaIndicele(i)<<"\n";
+		system("pause");
+	}*/
 
 	system("pause");
 	return 0;

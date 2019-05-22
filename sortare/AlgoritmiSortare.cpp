@@ -8,6 +8,7 @@ AlgoritmiSortare::AlgoritmiSortare()
 AlgoritmiSortare::~AlgoritmiSortare()
 {
 }
+
 void AlgoritmiSortare::SortarePrinInserare()
 {
 	std::clock_t start;
@@ -53,7 +54,34 @@ void AlgoritmiSortare::SortarePrinInterschimbare()
 
 void AlgoritmiSortare::SortareRapida()
 {
-
-
-
+	std::clock_t start;
+	start = std::clock();
+	Qsort(0, index - 1);
+	duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
 }
+
+void AlgoritmiSortare::Qsort(int p, int q)
+{
+	int m = Divide(p, q);
+
+	if (m - 1 > p) Qsort(p, m - 1);
+	if (m + 1 < q) Qsort(m + 1, q);
+}
+int AlgoritmiSortare::Divide(int p,int q)
+{
+	int st = p;
+	int dr=q;
+	int x = v[p];
+	while (st<dr)
+	{
+		while (st < dr && v[dr] >= x) dr--;
+		v[st] = v[dr];
+		while (st < dr && v[st] <= x) st++;
+		v[dr] = v[st];
+
+		v[st] = x;
+	}
+
+	return st;
+}
+

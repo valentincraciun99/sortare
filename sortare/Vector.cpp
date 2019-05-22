@@ -13,7 +13,7 @@ void Vector::Inserare(int element)
 {
 	
 	v[index++] = element;
-	std::cout << "a fost adaugat elementul " << v[index-1] << " pe pozitia " << index - 1<<"\n";
+	//std::cout << "a fost adaugat elementul " << v[index-1] << " pe pozitia " << index - 1<<"\n";
 }
 void Vector::Eliminare(int nr_elemente)
 {
