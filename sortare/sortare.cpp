@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	Vector *vector = new Vector(100000);
-
+	//
 	for (int i = 0; i <= 16999; i++)
 	{
 		vector->Inserare(rand());
