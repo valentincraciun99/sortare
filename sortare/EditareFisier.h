@@ -4,6 +4,7 @@
 
 class EditareFisier
 {
+
 public:
 	EditareFisier();
 	~EditareFisier();
