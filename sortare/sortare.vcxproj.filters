@@ -24,6 +24,9 @@
     <ClInclude Include="AlgoritmiSortare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EditareFisier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -36,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AlgoritmiSortare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditareFisier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

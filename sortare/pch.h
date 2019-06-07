@@ -13,4 +13,6 @@
 #include "Vector.h"
 #include <ctime>
 #include "AlgoritmiSortare.h"
+#include <string>
+using namespace std;
 #endif //PCH_H

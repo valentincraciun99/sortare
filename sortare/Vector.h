@@ -9,6 +9,9 @@ public:
 	void Eliminare(int);
 	double DurataUltimaSortare();
 	int ElementLaIndicele(int);
+	void GenerareElementeRandom();
+
+
 	
 };
 

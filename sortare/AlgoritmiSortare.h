@@ -15,6 +15,7 @@ public:
 
 private:
 	int Divide(int,int);
-	void Qsort(int, int);
+	void Qsort(int, int); 
+	bool VectorSortat();
 };
 

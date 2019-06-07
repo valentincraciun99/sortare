@@ -33,6 +33,20 @@ int Vector::ElementLaIndicele(int index_element)
 		
 }
 
+void Vector::GenerareElementeRandom()
+{
+	srand(time(NULL));
+	 index =(int) rand() % 200051;
+	for (int i = 0; i <index ; i++)
+	{
+		v[i] = rand();
+		//cout << v[i] << " ";
+	}
+
+}
+
+
+
 
 
 

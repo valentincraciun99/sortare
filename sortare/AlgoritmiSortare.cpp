@@ -1,4 +1,5 @@
 #include "pch.h"
+#include<iostream>
 
 AlgoritmiSortare::AlgoritmiSortare()
 {
@@ -52,11 +53,27 @@ void AlgoritmiSortare::SortarePrinInterschimbare()
 	duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
 }
 
+bool AlgoritmiSortare::VectorSortat()
+{
+
+	for (int i = 1; i < index; i++)
+	{
+		if (v[i] < v[i - 1]) return false;
+	}
+
+	return true;
+}
 void AlgoritmiSortare::SortareRapida()
 {
 	std::clock_t start;
 	start = std::clock();
-	Qsort(0, index - 1);
+	if (VectorSortat() == true)
+	{
+		duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
+		return;
+	}
+
+	Qsort(0, index - 1); std::cout << index - 1;
 	duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
 }
 
@@ -79,9 +96,9 @@ int AlgoritmiSortare::Divide(int p,int q)
 		while (st < dr && v[st] <= x) st++;
 		v[dr] = v[st];
 
-		v[st] = x;
+		
 	}
-
+	v[st] = x;
 	return st;
 }
 

@@ -6,17 +6,19 @@
 using namespace std;
 int main()
 {
-	Vector *vector = new Vector(100000);
-	//
-	for (int i = 0; i <= 16999; i++)
-	{
-		vector->Inserare(rand());
-	}
+	Vector *vector = new Vector(3000000);
+	
+	vector->GenerareElementeRandom();
+	
+	vector->SortarePrinInterschimbare();
+	//vector->SortareRapida();
 
-	//vector->SortarePrinInterschimbare();
-	vector->SortareRapida();
-	cout<<vector->DurataUltimaSortare();
+	cout <<"\n"<< vector->ElementLaIndicele(0)<<"\n";
+	
+	cout << vector->ElementLaIndicele(0)<<"\n";
+	cout<<vector->DurataUltimaSortare()<<"\n";
 
+	
 	
 	
 /*
