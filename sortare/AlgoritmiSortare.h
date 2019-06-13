@@ -5,12 +5,16 @@ protected:
 	int *v;
 	int index;
 	double duration;
+	friend class Vector;
 
 public:
 	AlgoritmiSortare();
 	void SortarePrinInserare();
 	void SortarePrinInterschimbare();
 	void SortareRapida();
+	void StlSort();
+	void GnomeSort();
+
 	~AlgoritmiSortare();
 
 private:

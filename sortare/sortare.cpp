@@ -9,13 +9,15 @@ int main()
 	Vector *vector = new Vector(3000000);
 	
 	vector->GenerareElementeRandom();
+
 	
-	vector->SortarePrinInterschimbare();
-	//vector->SortareRapida();
+	cout << vector->ElementLaIndicele(0) << "\n";
+	//vector->GnomeSort();
+	vector->SortareRapida();
 
 	cout <<"\n"<< vector->ElementLaIndicele(0)<<"\n";
 	
-	cout << vector->ElementLaIndicele(0)<<"\n";
+	
 	cout<<vector->DurataUltimaSortare()<<"\n";
 
 	

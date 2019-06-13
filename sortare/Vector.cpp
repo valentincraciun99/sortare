@@ -2,7 +2,7 @@
 #include "Vector.h"
 #include <iostream>
 
-
+ int var;
 Vector::Vector(int numar_elemente)
 {
 	v = new int[numar_elemente];

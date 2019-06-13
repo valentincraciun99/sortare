@@ -1,8 +1,10 @@
 #include "pch.h"
 #include<iostream>
+#include<algorithm>
 
 AlgoritmiSortare::AlgoritmiSortare()
 {
+	
 }
 
 
@@ -75,6 +77,34 @@ void AlgoritmiSortare::SortareRapida()
 
 	Qsort(0, index - 1); std::cout << index - 1;
 	duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
+}
+
+void AlgoritmiSortare::StlSort()
+{
+	std::clock_t start;
+	start = std::clock();
+	std::sort(v, v + index);
+	duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
+}
+
+void AlgoritmiSortare::GnomeSort()
+{
+	// A function to sort the algorithm using gnome sort 
+	std::clock_t start;
+	start = std::clock();
+		int index = 0;
+
+		while (index < this->index) {
+			if (index == 0)
+				index++;
+			if (v[index] >= v[index - 1])
+				index++;
+			else {
+				swap(v[index], v[index - 1]);
+				index--;
+			}
+		}
+		duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
 }
 
 void AlgoritmiSortare::Qsort(int p, int q)

@@ -3,6 +3,8 @@
 class Vector:public AlgoritmiSortare
 {
 public:
+	
+	int var;
 	Vector(int);
 	~Vector();
 	void Inserare(int);
