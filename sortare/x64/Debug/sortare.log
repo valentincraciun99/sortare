@@ -1,2 +1,8 @@
-﻿  sortare.cpp
+﻿  pch.cpp
+  AlgoritmiSortare.cpp
+  EditareFisier.cpp
+  Vector.cpp
+c:\users\valentin\documents\github\sortare\sortare\vector.cpp(38): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  sortare.cpp
+  Generating Code...
   sortare.vcxproj -> C:\Users\Valentin\Documents\GitHub\sortare\x64\Debug\sortare.exe

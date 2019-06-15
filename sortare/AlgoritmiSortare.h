@@ -1,11 +1,12 @@
 #pragma once
  class AlgoritmiSortare
 {
+	
 protected:
 	int *v;
 	int index;
 	double duration;
-	friend class Vector;
+
 
 public:
 	AlgoritmiSortare();

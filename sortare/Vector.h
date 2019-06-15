@@ -1,6 +1,7 @@
 #pragma once
 #include "AlgoritmiSortare.h"
-class Vector:public AlgoritmiSortare
+
+ class Vector:public AlgoritmiSortare
 {
 public:
 	
