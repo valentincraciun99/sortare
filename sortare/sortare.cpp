@@ -3,22 +3,29 @@
 
 #include "pch.h"
 #include <iostream>
+#include "sortare.h"
+#define vector (*vector)
 using namespace std;
 int main()
 {
-	Vector *vector = new Vector(3000000);
+	Vector vector = new Vector(3000000);
 	
-	vector->GenerareElementeRandom();
+	vector.GenerareElementeRandom();
 
-	
-	cout << vector->ElementLaIndicele(0) << "\n";
+	auto a = vector[0];
+	cout << a;
+
+	vector[0] = 5;
+	a = vector[0];
+	cout << a;
+
 	//vector->GnomeSort();
-	vector->SortareRapida();
+	//vector->SortareRapida();
 
-	cout <<"\n"<< vector->ElementLaIndicele(0)<<"\n";
+	//cout <<"\n"<< vector[0]<<"\n";
 	
 	
-	cout<<vector->DurataUltimaSortare()<<"\n";
+	//cout<<vector->DurataUltimaSortare()<<"\n";
 
 	
 	

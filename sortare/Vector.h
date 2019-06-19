@@ -11,7 +11,7 @@ public:
 	void Inserare(int);
 	void Eliminare(int);
 	double DurataUltimaSortare();
-	int ElementLaIndicele(int);
+	int & operator[](int index_element);
 	void GenerareElementeRandom();
 
 

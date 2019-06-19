@@ -26,7 +26,7 @@ double Vector::DurataUltimaSortare()
 {
 	return duration;
 }
-int Vector::ElementLaIndicele(int index_element)
+int& Vector::operator [](int index_element)
 {
 
 	return v[index_element];
