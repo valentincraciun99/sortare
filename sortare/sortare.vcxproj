@@ -154,6 +154,7 @@
     <ClInclude Include="AlgoritmiSortare.h" />
     <ClInclude Include="EditareFisier.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="sortare.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>

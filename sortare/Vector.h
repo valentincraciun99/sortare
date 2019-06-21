@@ -1,6 +1,7 @@
 #pragma once
 #include "AlgoritmiSortare.h"
-class Vector:public AlgoritmiSortare
+
+ class Vector:public AlgoritmiSortare
 {
 public:
 	
@@ -10,7 +11,7 @@ public:
 	void Inserare(int);
 	void Eliminare(int);
 	double DurataUltimaSortare();
-	int ElementLaIndicele(int);
+	int & operator[](int index_element);
 	void GenerareElementeRandom();
 
 
